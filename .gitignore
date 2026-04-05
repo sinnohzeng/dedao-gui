@@ -27,3 +27,4 @@ coverage.txt
 .cache
 .DS_Store
 .claude
+.remember
