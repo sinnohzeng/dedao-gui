@@ -359,6 +359,9 @@ func extractCourseDownloadData(articles *services.ArticleList, aid int, flag int
 			continue
 		}
 
+		if article.Audio == nil {
+			continue
+		}
 		if article.Audio.Mp3PlayURL != "" && len(article.AudioAliasIds) > 0 {
 			audioIds[article.ID] = article.Audio.AliasID
 
